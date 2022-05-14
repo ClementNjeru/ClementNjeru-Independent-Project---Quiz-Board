@@ -6,13 +6,13 @@
    
 }
 body{
-    background: white
+    background: rgb(245, 160, 241)
     
 }
 .qb{
 font-size: 55px;
-font-style: italic;
-}
+font-style: italic;}
+
 .title{
     font-size: 100%;
     font-weight: 900;
@@ -38,12 +38,14 @@ font-style: italic;
     border-radius: 5px;
     padding: 15px;
     font-size: 18px;
+    border: none;
 }
 .btn2{
     border-radius: 5px;
     padding: 15px;
-    background: red;
+    background: rgb(247, 11, 11);
     font-size: 18px;
+    border: none;
 }
 .infor{
     text-align: center; 
@@ -62,6 +64,7 @@ button.submit{
     border-radius: 5px;
     padding: 15px;
     font-size: 18px;
+    border: none;
 }
 .q1{
    
@@ -76,6 +79,7 @@ button.submit{
     padding: 15px;
     font-weight: 500;
     font-size: 15px;
+    border: none;
 }
 
 .feedback {
@@ -83,7 +87,6 @@ button.submit{
     font-size: large;
     padding: 10px
 }
-.feedback text{
-    align-items: center
-   
+div.feedback{
+    text-align: center;
 }
