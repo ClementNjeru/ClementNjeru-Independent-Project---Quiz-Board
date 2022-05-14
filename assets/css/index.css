@@ -5,19 +5,21 @@
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
     border: none;
-
-
 }
 body{
     background: rgb(168, 117, 226)
     
 }
-
+.qb{
+font-size: 55px;
+font-style: initial;
+}
 .title{
     font-size: 100%;
     font-weight: 900;
     text-align: center;
     padding: 10px;
+    font-style: italic;
 }
 
 .buttons{
@@ -36,12 +38,14 @@ body{
     background: red;
     border-radius: 5px;
     padding: 15px;
+    font-size: 18px;
 }
 
 .btn2{
     border-radius: 5px;
     padding: 15px;
     background: red;
+    font-size: 18px;
 }
 .infor{
     text-align: center; 
