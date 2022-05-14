@@ -54,7 +54,13 @@ ul li{
     list-style: none;
 }
 
-.submit{
-    text-align: flex;
-    background: red;
+div.submit{
+    text-align: center;
+}
+
+button.submit{
+    background: rgb(24, 189, 19);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
 }
