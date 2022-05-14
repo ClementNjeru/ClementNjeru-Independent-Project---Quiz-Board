@@ -1,8 +1,10 @@
-@import url( 'https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700&dispaly=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
 
 *{
     margin:0px;
-    font-family:'Poppins', sans-serif;
+    /* font-family:"Poppins", "Helvetica Neue", */
    
 }
 body{
@@ -11,7 +13,9 @@ body{
 }
 .qb{
 font-size: 55px;
-font-style: italic;}
+font-style: italic;
+font-family: 'Hanalei fill';
+} 
 
 .title{
     font-size: 100%;
@@ -67,11 +71,10 @@ button.submit{
     border: none;
 }
 .q1{
-   
-    font-style: oblique;
     font-weight: 500px;
-    font-size: 15px;
+    font-size: 20px;
     font-display: 22px;
+    font-style: italic;
 }
 .options{
     background: red;
@@ -84,7 +87,7 @@ button.submit{
 
 .feedback {
     font-style: italic;
-    font-size: large;
+    font-size: 20px;
     padding: 10px
 }
 div.feedback{
