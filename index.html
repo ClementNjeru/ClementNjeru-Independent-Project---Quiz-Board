@@ -15,7 +15,7 @@
     <div class="title">
         <span class="qb">QUIZ BOARD</span>
     </div>
-    <br>
+
     <div class="btn1">
         <button class="btn2">Start Quiz</button>
     </div>
@@ -39,6 +39,8 @@
         <button class="quit">Continue</button>
     </div>
 
+    <hr>
+
     <div class="Question" id="quiz">
         <div class="q1">
             <h3 id="quiz">1. What is the short form of HTML?</h3>
@@ -48,15 +50,15 @@
                     <label for="a" id="a_text">html</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="mcq1" id="b" class="answer">
                     <label for="b" id="b_text">hmlt</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="mcq1" id="c" class="answer">
                     <label for="c" id="c_text">mlht</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="mcq1" id="d" class="answer">
                     <label for="d" id="d_text">lmth</label>
                 </li>
             </ul>
@@ -74,15 +76,15 @@
                     <label for="a" id="a_text"> script </label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="mcq2" id="b" class="answer">
                     <label for="b" id="b_text"> sp </label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="mcq2" id="c" class="answer">
                     <label for="c" id="c_text">java </label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="mcq2" id="d" class="answer">
                     <label for="d" id="d_text">javascript</label>
                 </li>
             </ul>
@@ -100,15 +102,15 @@
                     <label for="a" id="a_text">programming</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="mcq3" id="b" class="answer">
                     <label for="b" id="b_text">scripting</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="mcq3" id="c" class="answer">
                     <label for="c" id="c_text">markup</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="mcq3" id="d" class="answer">
                     <label for="d" id="d_text">none</label>
                 </li>
             </ul>
@@ -125,15 +127,15 @@
                     <label for="a" id="a_text">Undefined</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="mcq4" id="b" class="answer">
                     <label for="b" id="b_text">Boolean</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="mcq4" id="c" class="answer">
                     <label for="c" id="c_text">Float</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="mcq4" id="d" class="answer">
                     <label for="d" id="d_text">Number</label>
                 </li>
             </ul>
@@ -151,15 +153,15 @@
                     <label for="a" id="a_text">Throws an error</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="mcq5" id="b" class="answer">
                     <label for="b" id="b_text">Ignores the statements</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="mcq5" id="c" class="answer">
                     <label for="c" id="c_text">Gives a warning</label>
                 </li>
                 <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="mcq5" id="d" class="answer">
                     <label for="d" id="d_text">None of the above</label>
                 </li>
             </ul>
@@ -177,15 +179,15 @@
                         <label for="a" id="a_text">document.write()</label>
                     </li>
                     <li>
-                        <input type="radio" name="answer" id="b" class="answer">
+                        <input type="radio" name="mcq6" id="b" class="answer">
                         <label for="b" id="b_text">console.log()</label>
                     </li>
                     <li>
-                        <input type="radio" name="answer" id="c" class="answer">
+                        <input type="radio" name="mcq6" id="c" class="answer">
                         <label for="c" id="c_text">window.alert()</label>
                     </li>
                     <li>
-                        <input type="radio" name="answer" id="d" class="answer">
+                        <input type="radio" name="mcq6" id="d" class="answer">
                         <label for="d" id="d_text">All of the above</label>
                     </li>
                 </ul>
@@ -198,8 +200,25 @@
         <button class="submit">submit</button>
     </div>
 
+    <hr class="section" width="100%" height="100%">
 
+    <div class="feedback">
+        <div class="feedback text">Successfully submitted the quiz
+            <div class="total score">
+                <span>Your score is; <p>-</p> out of <p>5</p></span>
+            </div>
+<hr>
+            <div class="check-up">
+                <button class="options">Re-attempt</button>
+                <button class="options">Finish</button>
 
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
 </body>
 
 </html>
