@@ -76,6 +76,9 @@ button.submit{
     font-display: 22px;
     font-style: italic;
 }
+.Question ul li{
+    border: 15px;
+}
 .options{
     background: red;
     border-radius: 5px;
