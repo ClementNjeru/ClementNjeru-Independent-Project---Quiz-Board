@@ -12,7 +12,7 @@ body{
 }
 .qb{
 font-size: 55px;
-font-style: initial;
+font-style: italic;
 }
 .title{
     font-size: 100%;
@@ -40,7 +40,6 @@ font-style: initial;
     padding: 15px;
     font-size: 18px;
 }
-
 .btn2{
     border-radius: 5px;
     padding: 15px;
@@ -50,5 +49,12 @@ font-style: initial;
 .infor{
     text-align: center; 
    font-weight: lighter;
+}
+ul li{
+    list-style: none;
+}
 
+.submit{
+    text-align: flex;
+    background: red;
 }
