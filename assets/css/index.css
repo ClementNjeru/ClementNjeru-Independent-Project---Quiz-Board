@@ -64,3 +64,10 @@ button.submit{
     padding: 15px;
     font-size: 18px;
 }
+.q1{
+    text-align: flex;
+    font-style: oblique;
+    font-weight: 500px;
+    font-size: 15px;
+    font-display: 22px;
+}
