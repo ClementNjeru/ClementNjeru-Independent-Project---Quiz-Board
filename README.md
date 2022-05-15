@@ -1,7 +1,7 @@
 ## QUIZ_BOARD
 
 ## Name of the Aurthor
-Clement Njeru Kemaro
+Clement Njeru.
 
 ## Description
 This is a platform that allows students to take their quizs. It is formated with a friendly navigation procedures which will allow the students to undertake the exercise without having any troubles.
@@ -36,5 +36,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Authors Info
  Slack Profile - [Clement Njeru]
- Email - [njeruclement36@gmail.com]
+ Email - [njeruclement36@gmail.com],
+       - [clement.kemaro@student.moringaschool.com]
  LinkedIn Profile - [Clement Njeru]
