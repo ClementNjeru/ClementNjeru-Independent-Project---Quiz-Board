@@ -1,13 +1,12 @@
-const quizForm = document.querySelector('.total');
-
-const resultPanel = document.querySelector('.submit');
-const Marks = document.querySelector('#score');
+const quizForm = require= document.querySelector('.form');
+const resultPanel = document.querySelector('#output');
+const Marks = document.querySelector('.marks');
 const testAnswers = ['a', 'a', 'b', 'c', 'b'];
 
 quizForm.addEventListener('submit', e => {
   e.preventDefault();
 
-  let userAnswers = [quizForm.qn1.value, quizForm.qn2.value, quizForm.qn3.value, quizForm.qn4.value, quizForm.qn5.value];
+  let userAnswers = [quizForm.mcq1.id, quizForm.mcq2.id, quizForm.mcq3.id, quizForm.mcq4.id, quizForm.mcq5.id];
   let score = 0;
 
   userAnswers.forEach((answer, index) => {
