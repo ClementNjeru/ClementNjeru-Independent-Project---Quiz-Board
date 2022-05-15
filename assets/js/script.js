@@ -1,12 +1,12 @@
-const quizForm = require= document.querySelector('.form');
-const resultPanel = document.querySelector('#output');
-const Marks = document.querySelector('.marks');
+const quizBoard = require= document.querySelector('.format');
+const resultPanel = document.querySelector('.submit');
+const Marks = document.querySelector('.total score');
 const testAnswers = ['a', 'a', 'b', 'c', 'b'];
 
-quizForm.addEventListener('submit', e => {
+quizBoard.addEventListener('submit', e => {
   e.preventDefault();
 
-  let userAnswers = [quizForm.mcq1.id, quizForm.mcq2.id, quizForm.mcq3.id, quizForm.mcq4.id, quizForm.mcq5.id];
+  let userAnswers = [quizBoard.mcq1.id, quizBoard.mcq2.id, quizBoard.mcq3.id, quizBoard.mcq4.id, quizBoard.mcq5.id];
   let score = 0;
 
   userAnswers.forEach((answer, index) => {
@@ -16,18 +16,18 @@ quizForm.addEventListener('submit', e => {
   });
 
 
-  let output = 0;
+  let submit = 0;
 
   const counter = setInterval(() => {
-    Marks.textContent = `${output}%`;
+    totalScore.textContent = `${submit}%`;
 
-    if (output === score) {
+    if (submit === score) {
       clearInterval(counter);
     } else {
-      output++;
+      submit++;
     }
   }, 10)
 
-  quizForm.reset();
+  quizBoard.reset();
 
 });
