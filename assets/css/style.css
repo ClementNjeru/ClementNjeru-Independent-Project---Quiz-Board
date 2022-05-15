@@ -47,7 +47,7 @@ font-family: 'Hanalei fill';
 .btn2{
     border-radius: 5px;
     padding: 15px;
-    background: rgb(247, 11, 11);
+    background: hwb(0 11% 17%);
     font-size: 18px;
     border: none;
 }
