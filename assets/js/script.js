@@ -1,44 +1,34 @@
-const quizData = [
-    {
-quiz: "What is the short form of HTML?",
-a: html,
-b:hmlt,
-c:hmlt,
-d:lmth,
+const quizForm = document.querySelector('.total');
 
-correct: "a"},
+const resultPanel = document.querySelector('.submit');
+const Marks = document.querySelector('#score');
+const testAnswers = ['a', 'a', 'b', 'c', 'b'];
+
+quizForm.addEventListener('submit', e => {
+  e.preventDefault();
+
+  let userAnswers = [quizForm.qn1.value, quizForm.qn2.value, quizForm.qn3.value, quizForm.qn4.value, quizForm.qn5.value];
+  let score = 0;
+
+  userAnswers.forEach((answer, index) => {
+    if (answer === testAnswers[index]) {
+      score += 20;
+    }
+  });
 
 
-{quiz: "Which tag is used to write the javascript code?",
- a:script,
- b:sp,
- c:javascript,
- d:java,
+  let output = 0;
 
- correct: "a"},
+  const counter = setInterval(() => {
+    Marks.textContent = `${output}%`;
 
-{quiz: "Which type of language is Javascript?", 
- a:Programming,
- b:Scripting,
- c:Markup,
- d:None,
+    if (output === score) {
+      clearInterval(counter);
+    } else {
+      output++;
+    }
+  }, 10)
 
- correct: "b"},
+  quizForm.reset();
 
-{quiz:"Which is not valid data type in Javascript", 
-a:Undefinded,
-b:Boolean,
-c:float,
-d:Number,
-
-correct: "c"},
-
-{quiz:"Upon encountering empty statements, what does the Javascript Interpreter do?",
-a:Throwserrors,
-b:Ignores,
-c:Warns,
-d:None,
-
-correct: "b"},
-    
-]
+});
