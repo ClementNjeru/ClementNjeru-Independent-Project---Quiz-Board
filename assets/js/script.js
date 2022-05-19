@@ -1,33 +1,56 @@
-const quizBoard = require= document.querySelector('.format');
-const resultPanel = document.querySelector('.submit');
-const Marks = document.querySelector('.total score');
-const testAnswers = ['a', 'a', 'b', 'c', 'b'];
+var remarks="";
+var marks=0;
+function myFunction(event){
+event.preventDefault();
 
-quizBoard.addEventListener('submit', e => {
-  e.preventDefault();
+  var marks=0;
+  const q1 = document.getElementsByName('mcq1');
+  const q2 = document.getElementsByName('mcq2');
+  const q3 = document.getElementsByName('mcq3');
+  const q4 = document.getElementsByName('mcq4');
+  const q5 = document.getElementsByName('mcq5');
+  var form = document.getElementById("form");
+ 
+for (let i of q1 ){
+  if(i.checked && i.value=='correct'){
+    marks=marks+20
+  }}
 
-  let userAnswers = [quizBoard.mcq1.id, quizBoard.mcq2.id, quizBoard.mcq3.id, quizBoard.mcq4.id, quizBoard.mcq5.id];
-  let score = 0;
+  for (let i of q2 ){
+    if(i.checked && i.value=="correct"){
+      marks=marks+20
+}}
+for (let i of q3 ){
+  if(i.checked && i.value=="correct"){
+    marks=marks+20
+}}
+for (let i of q4 ){
+    if(i.checked && i.value=="correct"){
+      marks=marks+20
+}}
+for (let i of q5 ){
+    if(i.checked && i.value=="correct"){
+      marks=marks+20};
+        }
+localStorage.setItem("marks",marks);
+FeedBack(marks)  ;
+document.getElementById('marks').innerHTML = marks;
 
-  userAnswers.forEach((answer, index) => {
-    if (answer === testAnswers[index]) {
-      score += 20;
-    }
-  });
+}
 
+form.addEventListener('submit', myFunction);
+event.preventDefault();
 
-  let submit = 0;
+function FeedBack(){
+if (marks =>80){
+remarks= "Excellent"
+}
+else if (marks=>60 && marks<80){
+remarks="Good"
+}
+else
+remarks="poor"
+}
+document.getElementById('remarks').innerHTML = remarks;
 
-  const counter = setInterval(() => {
-    totalScore.textContent = `${submit}%`;
-
-    if (submit === score) {
-      clearInterval(counter);
-    } else {
-      submit++;
-    }
-  }, 10)
-
-  quizBoard.reset();
-
-});
+}
